@@ -6,9 +6,14 @@
   <title>Teste</title>
 </head>
 <body>  
-    Pagina teste 
+    Pagina teste
 
+    <?php
 
-  
+        $nomeAplicacao = getenv('NOME_APLICACAO');
+        $nomeBanco = getenv('NOME_BANCO');
+       
+        echo $nomeAplicacao + " - " + $nomeBanco;
+    ?>
 </body>
 </html>
