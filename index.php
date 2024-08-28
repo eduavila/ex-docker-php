@@ -13,7 +13,7 @@
         $nomeAplicacao = getenv('NOME_APLICACAO');
         $nomeBanco = getenv('NOME_BANCO');
        
-        echo $nomeAplicacao + " - " + $nomeBanco;
+        echo $nomeAplicacao . " - " .  $nomeBanco;
     ?>
 </body>
 </html>

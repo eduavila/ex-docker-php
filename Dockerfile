@@ -18,3 +18,6 @@ WORKDIR /var/www/html
 
 # Copia os arquivos do projeto para o diretório de trabalho
 COPY --chown=www-data:www-data . .
+
+
+EXPOSE 8080
