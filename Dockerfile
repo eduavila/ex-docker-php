@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo
 RUN a2enmod headers expires rewrite
 
 COPY apache/http.conf /etc/apache2/sites-enabled/000-default.conf
+COPY apache/ports.conf /etc/apache2/ports.conf
 
 # Define o diretório de trabalho
 WORKDIR /var/www/html
